@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- required meta tags for a mobile first design strategy  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootStrap CSS stylesheet  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Peter A Cardillo, Portfolio, About Home Page</title>
+
+    <!-- style="float:left; margin-right:15px; margin-bottom:2px" -->
+    <!-- direct styling  -->
+    <style>
+      .wrap {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 2px;
+      }
+
+      .pSpace{
+        padding-top: 15px;
+        padding-left:15px;
+        padding-right:15px;
+      }
+
+      #bkgndImg{
+        background-image: url(./img/cardboard.png);
+        background-size: 100% 100%;
+      }
+
+      hr {
+        border: none;
+        border-top: 3px double #333;
+        color: #333;
+        overflow: visible;
+        text-align: center;
+        height: 3px;
+      }
+
+      .footer {
+        /* position: absolute; */
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        /* removed this color since the sticky footer color is class driven, the inLine style doesn't work  */
+        /* background-color: #a4c7a7; */
+      }
+    </style>    
+</head>
+
+
+
+
+
+
+
+
+
+<body id="bkgndImg">
+    <!-- start navbar section  -->
+    <header>      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand d-lg-inline-block" href="index.html">Peter A Cardillo</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">        
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <!-- added ml-auto class in the <div> & <a> tags to move links to the right align under the hamburger toggle button  -->
+            <!-- added text-right class to align to rightmost border of element  -->
+            <div class="navbar-nav ml-auto">
+              <!-- added accessability for screen reader and focused keyboard when tabbing  -->
+              <a class="nav-item nav-link ml-auto text-right active" href="#">About<span class="sr-only">Home Page about me information</span></a>
+              <a class="nav-item nav-link ml-auto text-right" href="./pages/contact.html">Contact</a>
+              <a class="nav-item nav-link ml-auto text-right" href="./pages/portfolio.html">Portfolio</a>
+              <!-- added accessability for focused keyboard when tabbing thru menu to main page  -->
+              <a class="sr-only sr-only-focusable" href="#">Skip to main About content</a>               
+            </div>
+          </div>
+        </nav>
+    </header>
+    <!-- end navbar section  -->
+
+    
+
+
+
+
+
+
+
+  <!-- start media object section -->
+    <section class="media">
+      <!-- added some custom style .wrap to img tag to float left, and .pSpace to the paragraphs for margin spacing -->
+      <div class="media-body">
+        <img class="align-self-start mr-3 wrap pSpace" src="./img/Peter-Cardillo-Profile-Pic.jpg" alt="Generic placeholder image" width="250" height="325"> 
+        <h5 class="mt-0 pSpace">Who Am I?</h5>
+        <p class="pSpace">Hi, I am a fullstack developer.  I am currently enrolled in the Columbia Engineering Bootcamp Fullstack Coding Class.  I have been involved in engineering throughout my entire career.  My experience spans not just with code, but with networks and systems integration.</p>
+        <p class="pSpace">Although I have been programming in various non-web languages for many years, I have been drawn to web programming, specifically fullstack development since I appreciate knowing how complete systems opperate.  Stay tuned for more content on this site as my skill improve.
+        </p>
+      </div>
+    </section>
+  <!-- end media object section -->
+
+ 
+  
+
+
+
+
+
+
+  <!-- start main about content section  -->
+  <br><hr>
+  <section class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="page-header">
+          <h1 style="text-align: center;">About Me</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              Here is some more about my experience and interests.  My career started in systems engineering more than 20 years ago.  Programming and coding had a different approach and workflow than today's programming technologies.  Ironically, many of those older systems are sill operating just as they were almost 20 years ago, but their surrounding environment has out paced them.  Seeing this transition happen, I decided to retool my engineering and programing skills to meet the needs of this new technological era.  I started this transition about 5 years ago, and I can finally say - I get it!  That may sound like a long time to grasp something, but I must confess, the web may look simple and easy at first glance into its subject matter, but I assure its not.  It's been famously said and quoted "You Don't Know Javascript" for a reason.  I am currently building another site which is linked to in the various images in the portfolio secion of this app.  I am currently self-employed and have a LLC where I service the small business community for all their technological needs.  Please see my card for some of my skillsets.  Oh, and by the way - streaming turtles are real!  And, that's a story for another day. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Create Card taking up 4 Columns-->
+      <div class="col-md-4">
+        <div class="card mt-2">
+          <div class="card-body">
+            <h5 class="card-title">My Business Card</h5>
+            <img src="./img/STLogo-2019-1200x900.jpg" alt="Placeholder" class="img-thumbnail" width="250" height="100">
+            <br>
+            <!-- <h6 class="card-subtitle mb-2 text-muted"><b>Skills:</b></h6> -->
+            <p class="card-text">Here are some of my new skills:</p>
+            <li>HTML, CSS, Javascript</li>
+            <li>Node</li>
+            <li>WebRTC</li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <!-- end main about content section  -->
+
+
+
+
+
+
+
+
+
+  <!-- sticky Footer  -->
+  <footer class="footer bg-light">
+    <div class="container" style="text-align: center">
+      <span class="text-muted"><a href="https://www.streamingTurtles.com"><small>Copyright &copy; My Website -  www.streamingTurtles.com</small></a></span>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+<!-- jQuery, Popper.js & bootStrap JavaScript plugin -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

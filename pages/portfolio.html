@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- required meta tags for a mobile first design strategy  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootStrap CSS stylesheet  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Peter A Cardillo, Portfolio Page</title>
+
+
+    <!-- direct styling  -->
+    <style>
+      .wrap {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 2px;
+      }
+
+      .pSpace{
+        padding-top: 15px;
+        padding-left:15px;
+        padding-right:15px;
+      }
+
+      #bkgndImg{
+        background-image: url(../img/cardboard.png);
+        background-size: 100% 100%;
+      }
+
+      hr {
+        border: none;
+        border-top: 3px double #333;
+        color: #333;
+        overflow: visible;
+        text-align: center;
+        height: 3px;
+      }
+
+      .footer {
+        /* position: absolute; */
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+      }
+
+
+
+      /* portfolio page styles begin  */
+      .vertical-center {
+        min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+        min-height: 100vh; /* These two lines are counted as one :-)       */
+        display: flex;
+        align-items: center;
+      }
+
+      .for-clean-img {
+          padding: 5px 10px 5px 10px;
+      }
+      /* portfolio page styles end  */
+    </style>    
+</head>
+
+
+
+
+
+
+
+
+
+<body id="bkgndImg">
+    <!-- start navbar  -->
+    <header>      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand d-lg-inline-block" href="../index.html">Peter A Cardillo</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">        
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <!-- added ml-auto class in the <div> & <a> tags to move links to the right align under the hamburger toggle button  -->
+            <!-- added text-right class to align to rightmost border of element  -->
+            <div class="navbar-nav ml-auto">
+              <!-- added accessability for screen reader and focused keyboard when tabbing  -->
+              <a class="nav-item nav-link ml-auto text-right" href="../index.html">About</a>
+              <a class="nav-item nav-link ml-auto text-right" href="./contact.html">Contact</a>
+              <a class="nav-item nav-link ml-auto text-right active" href="#">Portfolio<span class="sr-only">Portfolio Page of current & previous work</span></a>
+              <!-- added accessability for focused keyboard when tabbing thru menu to main page  -->
+              <a class="sr-only sr-only-focusable" href="#">Portfolio Page of current & previous work</a>               
+            </div>
+          </div>
+        </nav>
+    </header>
+    <!-- end navbar  -->
+
+
+
+<h1 style="text-align: center;">PORTFOLIO PAGE</h1>
+
+ 
+
+  <!-- start portfolio gallery section -->
+    <div class="jumbotron vertical-center"> 
+        <hr>
+        <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img alt="pics from my website" class="img-responsive" width="350" height="250" src="../img/st-pic-1.png"/></a></div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img alt="pics from my website" class="img-responsive" width="350" height="250" src="../img/st-pic-2.png"/></a></div>
+                        <div class="w-100"></div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img alt="pics from my website" class="img-responsive" width="350" height="250" src="../img/st-pic-3.png"/></a></div>
+                        <div class="col-md-6 col-sm-5 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img alt="pics from my website" class="img-responsive" width="350" height="250" src="../img/st-pic-4.png"/></a></div>
+                        <div class="w-100"></div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img alt="pics from my website" class="img-responsive" width="350" height="250" src="../img/st-pic-5.png"/></a></div>
+                        <div class="col-md-6 col-sm-5 col-xs-6 for-clean-img"><a href="https://streamingturtles.com"><img alt="pics from my website" class="img-responsive" width="350" height="250" src="../img/st-pic-6.png"/></a></div>    
+                    </div>
+        </div>       
+    </div>
+<!-- end gallery section  -->
+
+
+
+
+
+
+
+
+
+    <!-- sticky footer start  -->
+    <footer class="footer bg-light">
+    <div class="container" style="text-align: center">
+        <span class="text-muted"><a href="https://www.streamingTurtles.com"><small>Copyright &copy; My Website -  www.streamingTurtles.com</small></a></span>
+    </div>
+    </footer>
+    <!-- sticky footer end  -->
+
+
+
+
+
+
+
+
+
+<!-- jQuery, Popper.js & bootStrap JavaScript plugin -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
