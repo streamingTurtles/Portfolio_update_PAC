@@ -8,6 +8,11 @@
     <!-- bootStrap CSS stylesheet  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <!-- https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-icons.php  -->
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    
     <title>Peter A Cardillo, Portfolio, About Home Page</title>
 
     <!-- style="float:left; margin-right:15px; margin-bottom:2px" -->
@@ -49,6 +54,17 @@
         /* removed this color since the sticky footer color is class driven, the inLine style doesn't work  */
         /* background-color: #a4c7a7; */
       }
+
+      /* added for updated profile page HW */
+      div.relative {
+      position: relative;
+      top: -40px;
+      right: 1;
+      width: 250px;
+      height:40px;
+      border-left: 35px solid transparent;
+      border-bottom: 55px solid transparent;
+      }
     </style>    
 </head>
 
@@ -57,12 +73,9 @@
 
 
 
-
-
-
 <body id="bkgndImg">
     <!-- start navbar section  -->
-    <header>      
+    <header>  
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <a class="navbar-brand d-lg-inline-block" href="index.html">Peter A Cardillo</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">        
@@ -96,13 +109,27 @@
     <section class="media">
       <!-- added some custom style .wrap to img tag to float left, and .pSpace to the paragraphs for margin spacing -->
       <div class="media-body">
-        <img class="align-self-start mr-3 wrap pSpace" src="./img/Peter-Cardillo-Profile-Pic.jpg" alt="Generic placeholder image" width="250" height="325"> 
+
+          <!-- added for updated profile page HW -->
+          <hr>
+          <div>
+            <img class="align-self-start mr-3 wrap pSpace" src="./img/Peter-Cardillo-Profile-Pic.jpg" alt="Generic placeholder image" width="250" height="325" style="margin-top:30px;"> 
+            <div class="relative">   
+              <button type="button" class="fa fa-file-pdf-o" style="font-size:25px;"></button>
+              <button type="button" class="fa fa-linkedin" style="font-size:25px;"></button>
+              <button type="button" class="fa fa-github" style="font-size:25px;"></button>
+              <button type="button" class="fa fa-twitter" style="font-size:25px;"></button>       
+            </div>
+          </div>
+         
+
         <h5 class="mt-0 pSpace">Who Am I?</h5>
         <p class="pSpace">Hi, I am a fullstack developer.  I am currently enrolled in the Columbia Engineering Bootcamp Fullstack Coding Class.  I have been involved in engineering throughout my entire career.  My experience spans not just with code, but with networks and systems integration.</p>
         <p class="pSpace">Although I have been programming in various non-web languages for many years, I have been drawn to web programming, specifically fullstack development since I appreciate knowing how complete systems opperate.  Stay tuned for more content on this site as my skill improve.
         </p>
       </div>
     </section>
+
   <!-- end media object section -->
 
  
