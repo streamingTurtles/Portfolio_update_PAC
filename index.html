@@ -65,6 +65,29 @@
       border-left: 35px solid transparent;
       border-bottom: 55px solid transparent;
       }
+
+      /* adding for hover over to show RESUME text  */
+      .tooltip {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+      }
+      .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+      }
+      .tooltip:hover .tooltiptext {
+      visibility: visible;
+      }
+
     </style>    
 </head>
 
@@ -114,11 +137,19 @@
           <hr>
           <div>
             <img class="align-self-start mr-3 wrap pSpace" src="./img/Peter-Cardillo-Profile-Pic.jpg" alt="Generic placeholder image" width="250" height="325" style="margin-top:30px;"> 
-            <div class="relative">   
-              <button type="button" class="fa fa-file-pdf-o" style="font-size:25px;"></button>
-              <button type="button" class="fa fa-linkedin" style="font-size:25px;"></button>
-              <button type="button" class="fa fa-github" style="font-size:25px;"></button>
-              <button type="button" class="fa fa-twitter" style="font-size:25px;"></button>       
+            <div class="relative"> 
+              
+              
+              <!-- Resume  -->
+              <a href="/Peter_A_Cardillo_01-12-2021.pdf"><button type="button" class="fa fa-file-pdf-o" style="font-size:25px;"></button></a>         
+
+
+              <!-- linkedIn Profile  -->
+              <a href="https://www.linkedin.com/in/peter-cardillo-1b12b85/"><button type="button" class="fa fa-linkedin" style="font-size:25px;"></button></a>
+              <!-- gitHub Profile  -->
+              <a href="https://github.com/streamingTurtles?tab=overview&from=2020-12-01&to=2020-12-31"><button type="button" class="fa fa-github" style="font-size:25px;"></button></a>
+              <!-- twitter  -->
+              <a href="https://twitter.com/streamingTurtle"><button type="button" class="fa fa-twitter" style="font-size:25px;"></button></a>       
             </div>
           </div>
          
