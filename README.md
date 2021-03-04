@@ -2,7 +2,7 @@
 
 Due: Saturday, January 12, 2021 @ 11:59pm Local
 
-  - [gitHosted Live HTML Link](https://streamingturtles.github.io/Portfolio_update_PAC/index.html)
+  - [gitHub Hosted Live HTML Link of my Portfolio](https://streamingturtles.github.io/Portfolio_update_PAC/index.html)
 
 <hr>
 
